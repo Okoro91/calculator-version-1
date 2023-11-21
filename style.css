@@ -20,7 +20,16 @@
     border-radius: 10px;
 }
 
-.calculator form input, button {
+.calculator span {
+    font-size: 0.8rem;
+    text-align: start;
+    color: #f0e7e1;
+    font-style: italic;
+    font-weight: 400;
+    box-shadow: -13px 4px 13px -3px rgba(224,203,171,0.75);
+}
+
+.calculator form input {
     border: 0;
     outline: 0;
     width: 60px;
@@ -32,7 +41,20 @@
     color: #fff;
     cursor: pointer;
     margin: 10px;
+    transition: box-shadow .15s,transform .15s;
 }
+
+input[type="button"]:hover {
+    background-color: white;
+    color: #e26d0c;
+}
+
+
+input[type="button"]:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
 
 
 form .display {

@@ -7,6 +7,10 @@ const deleting = document.querySelector('#de');
 
 
 function outPutValue(output){
+    if(display.value.includes('=')){
+        display.value = '';
+    }
+    
     display.value += output;
 }
 
